@@ -1,7 +1,7 @@
 # SQL
 This repository contains various SQL practice queries.
 
-## - [SQL Keywords](#SQL_Keywords)
+## - [SQL Keywords](#1)_SQL_Keywords)
    - [Select](#Select)
 
 # Basic SQL Syntax
