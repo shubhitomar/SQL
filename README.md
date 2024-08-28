@@ -101,3 +101,8 @@ select first_name
 from customers
 WHERE NOT country = 'USA';
 ```
+
+```
+select * from customers
+WHERE first_name LIKE '%Betty%';
+```
