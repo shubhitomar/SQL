@@ -1,8 +1,8 @@
 # SQL
 This repository contains various SQL practice queries.
 
-## - [SQL Keywords](SQL_Keywords)
-   - [Select](Select)
+## - [SQL Keywords](#SQL_Keywords)
+   - [Select](#Select)
 
 # Basic SQL Syntax
 # 1) SQL Keywords
