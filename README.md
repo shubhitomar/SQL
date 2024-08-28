@@ -65,3 +65,10 @@ select * FROM customers;
 ```
 select * from Customers WHERE Country='Germany';
 ```
+
+```
+select * from customers
+WHERE country = 'USA'
+AND
+customer_id = 2;
+```
