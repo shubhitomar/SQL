@@ -27,3 +27,12 @@ select customer_id from customers where first_name = "John";
 ```
 select first_name from customers where customer_id = 2;
 ```
+
+## SELECT ORDER BY
+Using SELECT statement in conjunction with ORDER BY, we can sort the result-set in ascending or descending order.
+
+```
+select first_name , customer_id from customers
+order by
+customer_id;
+```
