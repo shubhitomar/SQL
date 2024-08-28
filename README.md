@@ -36,3 +36,10 @@ select first_name , customer_id from customers
 order by
 customer_id;
 ```
+### The default sort order is ascending if the ASC|DESC parameter is not defined.
+
+```
+select first_name , customer_id from customers
+order by
+customer_id desc;
+``` 
