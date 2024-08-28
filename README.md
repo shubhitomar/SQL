@@ -2,11 +2,12 @@
 This repository contains various SQL practice queries.
 
 ## [SQL Keywords](SQL_Keywords)
+   -  [Select](Select)
 
 # Basic SQL Syntax
 # 1) SQL Keywords
 
-## **Select** - The SELECT statement in SQL is majorly used for fetching data from the database.
+## *Select* - The SELECT statement in SQL is majorly used for fetching data from the database.
 
 ``` select * from customers; ```
 
@@ -44,4 +45,12 @@ customer_id;
 select first_name , customer_id from customers
 order by
 customer_id desc;
-``` 
+```
+
+## *From* - to specify the table from which to fetch data.
+### FROM can be used to join tables as well.
+
+
+```
+select * FROM customers;
+```
