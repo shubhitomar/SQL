@@ -6,13 +6,19 @@ This repository contains various SQL practice queries.
 
 ## *Select* - The SELECT statement in SQL is majorly used for fetching data from the database.
 
-``` SELECT * from customers; ```
+```
+SELECT * from customers;
+```
 
-``` SELECT county, orderstatus from customers;```
+```
+SELECT county, orderstatus from customers;
+```
 
 ## The SELECT DISTINCT statement is used to return only distinct (different) values. 
 
-``` SELECT DISTINCT age from customers;```
+``` 
+SELECT DISTINCT age from customers;
+```
 
 ## SELECT WHERE
 ### SELECT statement combined with WHERE gives us the ability to filter records based on a condition.
@@ -24,6 +30,7 @@ SELECT customer_id from customers WHERE first_name like '%ohn%';
 ```
 SELECT customer_id from customers WHERE first_name = "John";
 ```
+
 ```
 SELECT first_name from customers WHERE customer_id = 2;
 ```
@@ -36,6 +43,7 @@ SELECT first_name , customer_id from customers
 ORDER BY
 customer_id;
 ```
+
 ### The default sort order is ascending if the ASC|DESC parameter is not defined.
 
 ```
