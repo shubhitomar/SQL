@@ -20,3 +20,10 @@ SELECT statement combined with WHERE gives us the ability to filter records base
 ```
 select customer_id from customers where first_name like '%ohn%';
 ```
+
+```
+select customer_id from customers where first_name = "John";
+```
+```
+select first_name from customers where customer_id = 2;
+```
