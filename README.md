@@ -82,3 +82,16 @@ customer_id = 4
 Or
 first_name = 'John';
 ```
+
+```
+select * from customers
+WHERE
+country = 'USA'
+OR
+country = 'UK'
+```
+
+```select * from customers
+WHERE
+country in ('USA', 'UK');
+```
