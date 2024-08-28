@@ -1,8 +1,10 @@
 # SQL
 This repository contains various SQL practice queries.
 
+## [SQL Keywords](SQL_Keywords)
+
 # Basic SQL Syntax
-# SQL Keywords
+# 1) SQL Keywords
 
 ## **Select** - The SELECT statement in SQL is majorly used for fetching data from the database.
 
