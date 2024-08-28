@@ -6,42 +6,42 @@ This repository contains various SQL practice queries.
 
 ## *Select* - The SELECT statement in SQL is majorly used for fetching data from the database.
 
-``` select * from customers; ```
+``` SELECT * from customers; ```
 
-``` select county, orderstatus from customers;```
+``` SELECT county, orderstatus from customers;```
 
 ## The SELECT DISTINCT statement is used to return only distinct (different) values. 
 
-``` select distinct age from customers;```
+``` SELECT DISTINCT age from customers;```
 
 ## SELECT WHERE
 ### SELECT statement combined with WHERE gives us the ability to filter records based on a condition.
 
 ```
-select customer_id from customers where first_name like '%ohn%';
+SELECT customer_id from customers WHERE first_name like '%ohn%';
 ```
 
 ```
-select customer_id from customers where first_name = "John";
+SELECT customer_id from customers WHERE first_name = "John";
 ```
 ```
-select first_name from customers where customer_id = 2;
+SELECT first_name from customers WHERE customer_id = 2;
 ```
 
 ## SELECT ORDER BY
 ### Using SELECT statement in conjunction with ORDER BY, we can sort the result-set in ascending or descending order.
 
 ```
-select first_name , customer_id from customers
-order by
+SELECT first_name , customer_id from customers
+ORDER BY
 customer_id;
 ```
 ### The default sort order is ascending if the ASC|DESC parameter is not defined.
 
 ```
-select first_name , customer_id from customers
-order by
-customer_id desc;
+SELECT first_name , customer_id from customers
+ORDER BY
+customer_id DESC;
 ```
 
 ## *From* - to specify the table from which to fetch data.
@@ -50,4 +50,10 @@ customer_id desc;
 
 ```
 select * FROM customers;
+```
+
+## *Where* - Used to filter records. Incorporating a WHERE clause, you might specify conditions that must be met.
+
+```
+select * from Customers WHERE Country='Germany';
 ```
