@@ -95,3 +95,9 @@ country = 'UK'
 WHERE
 country in ('USA', 'UK');
 ```
+
+```
+select first_name
+from customers
+WHERE NOT country = 'USA';
+```
