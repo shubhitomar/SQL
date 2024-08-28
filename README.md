@@ -65,10 +65,20 @@ select * FROM customers;
 ```
 select * from Customers WHERE Country='Germany';
 ```
+### WHERE clause can be combined with AND, OR, and NOT operators:
 
 ```
 select * from customers
 WHERE country = 'USA'
 AND
 customer_id = 2;
+```
+
+```
+select * from customers
+WHERE country = 'UK'
+OR
+customer_id = 4
+Or
+first_name = 'John';
 ```
