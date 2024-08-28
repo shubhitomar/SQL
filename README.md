@@ -13,3 +13,10 @@ This repository contains various SQL practice queries.
 ## The SELECT DISTINCT statement is used to return only distinct (different) values. 
 
 ``` select distinct age from customers;```
+
+## SELECT WHERE
+SELECT statement combined with WHERE gives us the ability to filter records based on a condition.
+
+```
+select customer_id from customers where first_name like '%ohn%';
+```
