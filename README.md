@@ -2,6 +2,11 @@
 This repository contains various SQL practice queries.
 
 - [Select](#select)
+- [From](#from)
+- [Where](#where)
+- [Group By](#group_by)
+- [Order By](#order_by)
+- [Having](#having)
 
 # Basic SQL Syntax
 # 1) SQL Keywords
