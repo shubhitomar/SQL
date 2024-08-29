@@ -123,3 +123,23 @@ WHERE cost > 10 AND country = 'USA';
 ## *Group By* 
 ### Used to filter records. Incorporating a WHERE clause, you might specify conditions that must be met.
 
+```
+select country,avg(age)
+from customers
+GROUP BY country;
+```
+
+```
+select ProductCategory, SUM(SalesAmount) AS TotalSales
+from Sales
+GROUP BY ProductCategory;
+```
+
+### This query groups the data by both CustomerID and the year extracted from OrderDate. It then calculates the total order amount for each customer for each year.
+```
+SELECT CustomerID, YEAR(OrderDate) AS OrderYear, SUM(OrderAmount) AS TotalOrderAmount
+FROM Orders
+GROUP BY CustomerID, YEAR(OrderDate);
+```
+
+
