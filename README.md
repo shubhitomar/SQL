@@ -4,8 +4,8 @@ This repository contains various SQL practice queries.
 - [Select](#select)
 - [From](#from)
 - [Where](#where)
-- [Group By](#group_by)
-- [Order By](#order_by)
+- [Group By](#group-by)
+- [Order By](#order-by)
 - [Having](#having)
 
 # Basic SQL Syntax
