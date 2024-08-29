@@ -1,6 +1,8 @@
 # SQL
 This repository contains various SQL practice queries.
 
+- [Select](#select)
+
 # Basic SQL Syntax
 # 1) SQL Keywords
 
@@ -169,7 +171,7 @@ from customers
 order by age desc, customer_id asc;
 ```
 
-## HAVING
+## *HAVING*
 ### The HAVING clause is used to filter groups after aggregation has taken place.
 ### It is typically used with GROUP BY to apply conditions on aggregate functions (like SUM(), COUNT(), AVG(), etc.) and filtered results of grouped data.
 
