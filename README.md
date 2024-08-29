@@ -169,4 +169,28 @@ from customers
 order by age desc, customer_id asc;
 ```
 
+## HAVING
+### The HAVING clause is used to filter groups after aggregation has taken place.
+### It is typically used with GROUP BY to apply conditions on aggregate functions (like SUM(), COUNT(), AVG(), etc.) and filtered results of grouped data.
+
+```
+select department, AVG(salary)
+from Employees
+GROUP BY department
+HAVING avg(salary) > 50000;
+```
+
+### When used without a GROUP BY clause, the HAVING clause acts similarly to a WHERE clause but is applied after aggregation.
+
+```
+select sum(salary) AS total_salary
+from employees
+HAVING total_salary > 50000;
+```
+
+### WHERE: Filters rows before aggregation. It works on individual rows of data. You cannot use aggregate functions directly in a WHERE clause.
+### HAVING: Filters groups after aggregation. It works on grouped data and can use aggregate functions to filter those groups.
+
+
+
 
