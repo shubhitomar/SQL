@@ -106,3 +106,12 @@ WHERE NOT country = 'USA';
 select * from customers
 WHERE first_name LIKE '%Betty%';
 ```
+
+
+```
+select * from customers
+WHERE month(date_ordered) between 3 and 4 ;
+```
+
+```
+sele
