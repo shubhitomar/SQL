@@ -161,7 +161,7 @@ order by age desc;
 #### Priority in Sorting:
 #### First Priority - first column
 #### Second Priority - second column
-#### After sorting by the first column, this part specifies that if there are any ties (i.e., if multiple rows have the same age), then the sorting will be done by the second column in ascending order.
+#### After sorting by the first column, this part specifies that if there are any ties (i.e., if multiple rows have the same age), then the sorting will be done by the second column in the specified order.
 
 ```
 select *
