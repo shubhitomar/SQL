@@ -114,4 +114,7 @@ WHERE month(date_ordered) between 3 and 4 ;
 ```
 
 ```
-sele
+select * from customers
+WHERE cost > 10 AND country = 'USA';
+```
+
