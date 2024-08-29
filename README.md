@@ -198,6 +198,35 @@ HAVING total_salary > 50000;
 ### WHERE: Filters rows before aggregation. It works on individual rows of data. You cannot use aggregate functions directly in a WHERE clause.
 ### HAVING: Filters groups after aggregation. It works on grouped data and can use aggregate functions to filter those groups.
 
+## Combining WHERE, GROUP BY, and HAVING
 
+```
+SELECT salesperson, SUM(amount) AS total_sales
+FROM sales
+WHERE region = 'North'
+GROUP BY salesperson
+HAVING total_sales > 5000;
+```
+
+## Why You Cannot Use Aggregate Functions in WHERE:
+### Order of Execution: SQL processes the WHERE clause before it processes the aggregate functions. 
+
+```
+SELECT salesperson, SUM(amount) AS total_sales
+FROM sales
+WHERE SUM(amount) > 10000
+GROUP BY salesperson;
+```
+### Why This Fails: The above query will produce an error because the WHERE clause tries to use SUM(amount), which is an aggregate function. Since WHERE is evaluated before grouping and aggregation, it cannot reference SUM(amount).
+
+## Correct Approach Using HAVING:
+### It is used after the aggregation is performed. HAVING can reference aggregate results because it is evaluated after the GROUP BY operation has taken place.
+
+```
+SELECT salesperson, SUM(amount) AS total_sales
+FROM sales
+GROUP BY salesperson
+HAVING SUM(amount) > 10000;
+```
 
 
