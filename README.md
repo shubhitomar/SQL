@@ -142,4 +142,31 @@ FROM Orders
 GROUP BY CustomerID, YEAR(OrderDate);
 ```
 
+## *ORDER BY*
+## The ORDER BY clause in SQL is used to sort the result-set from a SELECT statement in ascending or descending order. 
+
+```
+select age
+from customers
+order by age ;
+```
+
+```
+select age
+from customers
+order by age desc;
+```
+
+### Multiple Columns in ORDER BY
+#### Priority in Sorting:
+#### First Priority - first column
+#### Second Priority - second column
+#### After sorting by the first column, this part specifies that if there are any ties (i.e., if multiple rows have the same age), then the sorting will be done by the second column in ascending order.
+
+```
+select *
+from customers
+order by age desc, customer_id asc;
+```
+
 
