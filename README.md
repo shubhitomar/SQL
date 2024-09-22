@@ -13,6 +13,9 @@ This repository contains various SQL practice queries.
 - [Aggregate functions](#aggregate-functions)
 - [Sum](#sum)
 - [Count](#count)
+- [Average](#average)
+- [Min](#min)
+- [Max](#max)
 
 # Basic SQL Syntax
 # 1) SQL Keywords
@@ -287,4 +290,30 @@ FROM table_name
 WHERE condition;
 ```
 
+## *AVERAGE*
+### The AVG() function returns the average value of a numeric column.
+
+```
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+```
+
+## *MIN*
+### The MIN() function returns the smallest value of the selected column.
+
+```
+SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+```
+
+## *MAX*
+### The MAX() function returns the largest value of the selected column.
+
+```
+SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+```
 
