@@ -208,7 +208,7 @@ GROUP BY salesperson
 HAVING total_sales > 5000;
 ```
 
-## Why You Cannot Use Aggregate Functions in WHERE:
+## Why We Cannot Use Aggregate Functions in WHERE:
 ### Order of Execution: SQL processes the WHERE clause before it processes the aggregate functions. 
 
 ```
@@ -229,4 +229,18 @@ GROUP BY salesperson
 HAVING SUM(amount) > 10000;
 ```
 
+## *INSERT*
+### There are two main forms of the INSERT command: 
 
+### INSERT INTO table_name (column1, column2, ...) where only named columns will be filled with data.
+
+```
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+```
+### INSERT INTO, if you are adding values for all the columns of the table, you do not need to specify the column names in the SQL query. However, make sure the order of the values is in the same order as the columns in the table.
+
+```
+INSERT INTO table_name
+VALUES (value1, value2, value, ...);
+```
