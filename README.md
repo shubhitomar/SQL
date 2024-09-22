@@ -109,7 +109,8 @@ OR
 country = 'UK'
 ```
 
-```select * from customers
+```
+select * from customers
 WHERE
 country in ('USA', 'UK');
 ```
