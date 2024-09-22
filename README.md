@@ -8,6 +8,8 @@ This repository contains various SQL practice queries.
 - [Order By](#order-by)
 - [Having](#having)
 - [Insert](#insert)
+- [Update](#update)
+- [Delete](#delete)
 
 # Basic SQL Syntax
 # 1) SQL Keywords
@@ -255,3 +257,9 @@ SET column1 = value1, column2 = value2, ...
 WHERE condition;
 ```
 
+## *DELETE*
+### The DELETE statement is used to delete existing records in a table.
+
+```
+DELETE FROM table_name WHERE condition;
+```
