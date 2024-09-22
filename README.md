@@ -273,16 +273,18 @@ DELETE FROM table_name WHERE condition;
 ### The SUM() function returns the total sum of a numeric column.
 
 ```
-SELECT SUM(column)
-FROM table_name;
+SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
 ```
 
 ## *COUNT*
 ### The COUNT() function returns the number of rows that match a specified criterion.
 
 ```
-SELECT COUNT(*)
-FROM column;
+SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
 ```
 
 
