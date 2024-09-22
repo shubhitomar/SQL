@@ -10,6 +10,9 @@ This repository contains various SQL practice queries.
 - [Insert](#insert)
 - [Update](#update)
 - [Delete](#delete)
+- [Aggregate functions](#aggregate_functions)
+- [Sum](#sum)
+- [Count](#count)
 
 # Basic SQL Syntax
 # 1) SQL Keywords
@@ -263,3 +266,23 @@ WHERE condition;
 ```
 DELETE FROM table_name WHERE condition;
 ```
+
+# Aggregate Functions
+
+## *SUM*
+### The SUM() function returns the total sum of a numeric column.
+
+```
+SELECT SUM(column)
+FROM table_name;
+```
+
+## *COUNT*
+### The COUNT() function returns the number of rows that match a specified criterion.
+
+```
+SELECT COUNT(*)
+FROM column;
+```
+
+
