@@ -233,13 +233,13 @@ HAVING SUM(amount) > 10000;
 ## *INSERT*
 ### There are two main forms of the INSERT command: 
 
-### INSERT INTO table_name (column1, column2, ...) where only named columns will be filled with data.
+### INSERT INTO table_name (column1, column2, ...): where only named columns will be filled with data.
 
 ```
 INSERT INTO table_name (column1, column2, column3, ...)
 VALUES (value1, value2, value3, ...);
 ```
-### INSERT INTO, if we add values for all the columns of the table, then the column names in the SQL query need not be specified. However, the values' order should be the same as the columns in the table.
+### INSERT INTO: if we add values for all the columns of the table, then the column names in the SQL query need not be specified. However, the values' order should be the same as the columns in the table.
 
 ```
 INSERT INTO table_name
