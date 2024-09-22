@@ -16,6 +16,7 @@ This repository contains various SQL practice queries.
 - [Average](#average)
 - [Min](#min)
 - [Max](#max)
+- [Group By](#group-by)
 
 # Basic SQL Syntax
 # 1) SQL Keywords
@@ -317,3 +318,11 @@ FROM table_name
 WHERE condition;
 ```
 
+## *GROUP BY*
+### The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+
+```
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country;
+```
