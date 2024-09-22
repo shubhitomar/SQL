@@ -16,7 +16,7 @@ This repository contains various SQL practice queries.
 - [Average](#average)
 - [Min](#min)
 - [Max](#max)
-- [Group By](#group-by)
+- [Group By](#GROUP-BY)
 
 # Basic SQL Syntax
 # 1) SQL Keywords
