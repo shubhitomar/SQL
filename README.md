@@ -10,7 +10,7 @@ This repository contains various SQL practice queries.
 - [Insert](#insert)
 - [Update](#update)
 - [Delete](#delete)
-- [Aggregate functions](#aggregate_functions)
+- [Aggregate functions](#aggregate-functions)
 - [Sum](#sum)
 - [Count](#count)
 
